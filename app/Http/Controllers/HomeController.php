@@ -69,28 +69,10 @@ class HomeController extends Controller
         }
         //  bottom border
         $this-> print_border($column_widths);
+
+        
         // easy way with lib
-        $task1 = array(
-            array(
-                'Name' => 'Trikse',
-                'Color' => 'Green',
-                'Element' => 'Earth',
-                'Likes' => 'Flowers'
-            ),
-            array(
-                'Name' => 'Vardenis',
-                'Element' => 'Air',
-                'Likes' => 'Singning',
-                'Color' => 'Blue'
-            ),
-            array(
-                'Element' => 'Water',
-                'Likes' => 'Dancing',
-                'Name' => 'Jonas',
-                'Color' => 'Pink'
-            ),
-        );
-        $table1 = (new ArrayToTextTable($task1))->render();
+        $table1 = (new ArrayToTextTable($data))->render();
         $numbers = [1, 2, 4, 7, 1, 6, 2, 8];
         rsort($numbers);
         $part1 = 0;
