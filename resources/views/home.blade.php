@@ -14,10 +14,10 @@
         <pre>{{ print_r($table, true) }}</pre>
     </div>
     <div>
-        <h2>task nr.2</h2>
-        <h3>{{$rez1}}</h3>
-        <h3>{{$rez2}}</h3>
-        <h3>{{$rez3}}</h3>
+        <p>task nr.2</p>
+        <p>{{$rez1}}</p>
+        <p>{{$rez2}}</p>
+        <p>{{$rez3}}</p>
     </div>
 </body>
 
