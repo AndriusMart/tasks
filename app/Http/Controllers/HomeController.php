@@ -12,6 +12,7 @@ class HomeController extends Controller
      */
     public function index()
     {
+        //Task nr.1
         echo "task nr. 1";
         echo "<br>";
         $data = array(
@@ -70,9 +71,11 @@ class HomeController extends Controller
         //  bottom border
         $this-> print_border($column_widths);
 
-        
+
         // easy way with lib
         $table1 = (new ArrayToTextTable($data))->render();
+
+        //Task nr.2
         $numbers = [1, 2, 4, 7, 1, 6, 2, 8];
         rsort($numbers);
         $part1 = 0;
